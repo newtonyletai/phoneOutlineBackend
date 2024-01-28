@@ -31,7 +31,7 @@ app.get("/products", (req, res) => {
 })
 
 const port = process.env.PORT || 5000
-const uri = process.env.DB_URL
+const uri = process?.env?.DB_URL
 
 app.listen(port, console.log(`Backend Server is running on port ${port}`))
 mongoose.connect(uri, {
